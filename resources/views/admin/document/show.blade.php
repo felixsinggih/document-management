@@ -3,7 +3,7 @@
 @section('content')
     <div class="card overflow-hidden">
         <div class="card-body">
-            <a class="btn btn-label-primary mb-4 waves-effect" href="/client/document">
+            <a class="btn btn-label-primary mb-4 waves-effect" href="/admin/document">
                 <i class="ti ti-chevron-left scaleX-n1-rtl me-1 me-1"></i>
                 <span class="align-middle">Kembali</span></a>
             {{-- <a href="/client/document/{{ $document->id }}/edit" class="btn btn-success mb-4 waves-effect">

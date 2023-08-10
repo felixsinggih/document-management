@@ -3,7 +3,7 @@
 @section('content')
     <div class="card mb-4">
         <div class="card-body">
-            <form action="/client/document/update/{{ $document->id }}" method="POST" enctype="multipart/form-data">
+            <form action="/client/document/{{ $document->id }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('put')
 

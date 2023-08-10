@@ -3,7 +3,7 @@
 @section('content')
     <div class="card mb-4">
         <div class="card-body">
-            <form action="/admin/admin/update/{{ $admin->id }}" method="POST">
+            <form action="/admin/admin/{{ $admin->id }}" method="POST">
                 @csrf
                 @method('put')
 

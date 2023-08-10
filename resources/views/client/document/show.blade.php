@@ -9,7 +9,7 @@
             <a href="/client/document/{{ $document->id }}/edit" class="btn btn-success mb-4 waves-effect">
                 <i class="ti ti-pencil scaleX-n1-rtl me-1 me-1"></i>
                 <span class="align-middle">Edit</span></a>
-            <form action="/client/document/{{ $document->id }}/delete" method="post" class="d-inline">
+            <form action="/client/document/{{ $document->id }}" method="post" class="d-inline">
                 @csrf
                 @method('delete')
 

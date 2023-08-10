@@ -39,7 +39,7 @@
                                 <a href="/admin/company/{{ $item->id }}/edit"
                                     class="btn btn-sm btn-success waves-effect waves-light">
                                     <span class="ti-xs ti ti-pencil"></span></a>
-                                <form action="/admin/company/{{ $item->id }}/delete" method="post" class="d-inline">
+                                <form action="/admin/company/{{ $item->id }}" method="post" class="d-inline">
                                     @csrf
                                     @method('delete')
 
