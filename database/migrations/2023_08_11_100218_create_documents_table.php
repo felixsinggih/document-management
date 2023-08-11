@@ -11,16 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('documents', function (Blueprint $table) {
             $table->engine = 'MyISAM';
             $table->bigIncrements('id');
-            $table->bigInteger('company_id')->nullable();
-            $table->string('role', 6);
-            $table->string('name', 255);
-            $table->string('username', 255)->unique();
-            $table->string('email', 255)->unique();
-            $table->string('password', 255);
-            $table->string('is_active', 3);
+            $table->bigInteger('company_id');
+            $table->string('document_name', 255);
+            $table->date('due_date');
             $table->timestamps();
         });
     }
@@ -30,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('documents');
     }
 };
