@@ -2,7 +2,7 @@
     <div class="container-xxl d-flex h-100">
         @if (auth()->user()->role == 'admin')
             @include('layout.menu-admin')
-        @else
+        @elseif (auth()->user()->role == 'client')
             @include('layout.menu-client')
         @endif
     </div>

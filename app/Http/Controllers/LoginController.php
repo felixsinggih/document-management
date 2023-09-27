@@ -33,7 +33,7 @@ class LoginController extends Controller
                 return redirect()->intended('/client/dashboard');
         }
 
-        return back()->with('loginError', 'Login failed!');
+        return back()->with('loginError', 'Email / Password salah!');
     }
 
     public function logout(Request $request): RedirectResponse

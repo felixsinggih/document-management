@@ -292,7 +292,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-grow-1">
-                                        <span class="fw-semibold d-block">{{ auth()->user()->name }}</span>
+                                        <span class="fw-semibold d-block">{{ auth()->user()->email }}</span>
                                         <small class="text-muted">{{ ucfirst(auth()->user()->role) }}</small>
                                     </div>
                                 </div>
